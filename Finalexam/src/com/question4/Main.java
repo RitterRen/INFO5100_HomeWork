@@ -66,7 +66,7 @@ public class Main {
         //sorting released year
         netFlix.myList.stream()
                 .flatMap(g -> g.genre.stream())
-                .sorted(Comparator.comparing(movie -> movie.getReleaseDate().getTime()))
+                .sorted(Comparator.comparing(movie -> movie.getReleaseDate().getTime()));
     }
 
     public static String addTitle(Movie movie){
